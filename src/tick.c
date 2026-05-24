@@ -1,18 +1,11 @@
-#include "raylib.h"
-
+#include "draw.h"
+#include "physics.h"
 #include "tick.h"
-
-static inline void draw(void)
-{
-        ClearBackground(RAYWHITE);
-}
 
 void tick(void)
 {
-        BeginDrawing();
+        physics();
 
         draw();
-
-        EndDrawing();
 }
 
