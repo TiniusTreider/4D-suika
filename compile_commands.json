@@ -36,5 +36,43 @@
     ],
     "directory": "/home/tinius/cp/suika",
     "output": "build/main.o"
+  },
+  {
+    "file": "src/memory.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-Iinclude",
+      "-march=native",
+      "-flto",
+      "-std=c11",
+      "-c",
+      "src/memory.c",
+      "-o",
+      "build/memory.o"
+    ],
+    "directory": "/home/tinius/cp/suika",
+    "output": "build/memory.o"
+  },
+  {
+    "file": "src/tick.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-Iinclude",
+      "-march=native",
+      "-flto",
+      "-std=c11",
+      "-c",
+      "src/tick.c",
+      "-o",
+      "build/tick.o"
+    ],
+    "directory": "/home/tinius/cp/suika",
+    "output": "build/tick.o"
   }
 ]
