@@ -1,7 +1,14 @@
+#include "raylib.h"
+
 #include "draw.h"
+#include "physics.h"
 
 void draw(void)
 {
-        return;
+        BeginDrawing();
+
+        ClearBackground(DARKBROWN);
+
+        EndDrawing();
 }
 
