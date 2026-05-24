@@ -1,5 +1,24 @@
 [
   {
+    "file": "src/clean.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-Iinclude",
+      "-march=native",
+      "-flto",
+      "-std=c11",
+      "-c",
+      "src/clean.c",
+      "-o",
+      "build/clean.o"
+    ],
+    "directory": "/home/tinius/cp/suika",
+    "output": "build/clean.o"
+  },
+  {
     "file": "src/error.c",
     "arguments": [
       "/usr/bin/gcc",
@@ -17,6 +36,25 @@
     ],
     "directory": "/home/tinius/cp/suika",
     "output": "build/error.o"
+  },
+  {
+    "file": "src/init.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-Iinclude",
+      "-march=native",
+      "-flto",
+      "-std=c11",
+      "-c",
+      "src/init.c",
+      "-o",
+      "build/init.o"
+    ],
+    "directory": "/home/tinius/cp/suika",
+    "output": "build/init.o"
   },
   {
     "file": "src/main.c",

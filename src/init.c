@@ -11,11 +11,13 @@ static inline void init_window(void)
         InitWindow(1280, 720, "4D suika");
 }
 
+volatile sig_atomic_t interrupted = 0;
+
 void interrupt(int signal)
 {
         (void)signal;
 
-        interrupted = 0;
+        interrupted = 1;
 }
 
 static inline void init_signal(void)

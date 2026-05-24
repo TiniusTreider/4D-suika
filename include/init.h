@@ -3,7 +3,7 @@
 
 #include <signal.h>
 
-static volatile sig_atomic_t interrupted = 0;
+extern volatile sig_atomic_t interrupted;
 
 void init(void);
 
