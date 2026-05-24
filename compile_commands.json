@@ -1,0 +1,40 @@
+[
+  {
+    "file": "src/error.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-Iinclude",
+      "-march=native",
+      "-flto",
+      "-std=c11",
+      "-c",
+      "src/error.c",
+      "-o",
+      "build/error.o"
+    ],
+    "directory": "/home/tinius/cp/suika",
+    "output": "build/error.o"
+  },
+  {
+    "file": "src/main.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-O3",
+      "-Iinclude",
+      "-march=native",
+      "-flto",
+      "-std=c11",
+      "-c",
+      "src/main.c",
+      "-o",
+      "build/main.o"
+    ],
+    "directory": "/home/tinius/cp/suika",
+    "output": "build/main.o"
+  }
+]
