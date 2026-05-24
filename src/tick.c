@@ -4,7 +4,7 @@
 
 static inline void draw(void)
 {
-        return;
+        ClearBackground(RAYWHITE);
 }
 
 void tick(void)

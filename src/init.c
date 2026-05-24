@@ -8,6 +8,7 @@
 
 static inline void init_window(void)
 {
+        SetConfigFlags(FLAG_FULLSCREEN_MODE);
         InitWindow(1280, 720, "4D suika");
 }
 
@@ -31,9 +32,16 @@ static inline void init_signal(void)
         sigaction(SIGINT, &sa, NULL);
 }
 
+static inline void init_fps(void)
+{
+        SetTargetFPS(60);
+}
+
 void init(void)
 {
         init_window();
 
         init_signal();
+
+        init_fps();
 }

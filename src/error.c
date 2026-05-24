@@ -8,7 +8,7 @@
 void error(const char *message)
 {
         fflush(stdout);
-        fprintf(stderr, "error: %s\n", message);
+        fprintf(stderr, "suika: ERROR: %s\n", message);
         exit(EXIT_FAILURE);
 }
 
