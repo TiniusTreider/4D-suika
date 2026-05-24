@@ -1,5 +1,6 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -O3 -Iinclude -march=native -flto -lm -std=c11
+CLINKS = -lraylib
+CFLAGS = -Wall -Wextra -O3 -Iinclude $(CLINKS) -march=native -flto -std=c11
 
 sources = $(wildcard src/*)
 objects = $(patsubst src/%.c,build/%.o,$(sources))
@@ -9,7 +10,7 @@ executable = suika
 
 all: $(executable)
 
-debug: CFLAGS = -Wall -Wextra -g -Iinclude -lm -std=c11
+debug: CFLAGS = -Wall -Wextra -g -Iinclude $(CLINKS)-std=c11
 debug: clean $(executable)
 
 $(executable): $(objects)
